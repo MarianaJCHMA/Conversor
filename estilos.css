@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.contenedor {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    border: 2px solid #333;
+}
+
+.contenedor_entrada,
+.contenedor_salida {
+    margin-bottom: 20px;
+}
+
+.titulo_entrada,
+.titulo_salida {
+    text-align: center;
+    font-size: 18px;
+}
+
+.input {
+    display: inline;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.boton {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.opciones {
+    text-align: center;
+    font-size: 18px;
+}
+
+.opciones input {
+    display: none;
+}
+
+.opciones label {
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+#opcionDecimal:checked + label,
+#opcionBinario:checked + label,
+#opcionHexadecimal:checked + label {
+    background-color: #ff8800; /* Color de resaltado para la opción seleccionada */
+}
